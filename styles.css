@@ -1,0 +1,193 @@
+.body *{
+  box-sizing: border-box;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem auto;
+  overflow: hidden;
+}
+.nav-logo {
+  width: 5.5rem;
+}
+.nav-link {
+  display: flex;
+  min-width: 18rem;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  margin-left: 30rem;
+}
+.nav-link a {
+  text-decoration: none;
+  color: black;
+}
+.nav-items1 {
+  color: grey;
+  font-size: 0.8rem;
+}
+.nav-items2 {
+  font-size: 0.8rem;
+}
+
+.signup-button {
+  border-radius: 4rem;
+  background-color: orange;
+  color: white;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  height: 2rem;
+  width: 5rem;
+}
+hr {
+  width: 70%;
+  opacity: 0.2;
+  border-top: 0.5px;
+}
+.hero-image {
+  width: 100vw;
+  height: 70vh;
+  background-color:whitesmoke;
+  position: relative;
+}
+.bg-image{
+  background-image: url(/landing--page/hero-removebg-preview.png);
+  object-position:center;
+  background-repeat:no-repeat;  
+  padding: 8em;
+  object-fit: cover;
+  background-position:center;
+  position: absolute;
+  z-index: 10;
+  left: 10.5em;
+  bottom: -7em;
+  
+}
+.hero-header {
+  color: rgb(14, 14, 128);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 0.8px;
+  text-align: center;
+  font-size: 1.7rem;
+  padding-top: 1.9rem;
+  opacity: 0.8;
+  margin-bottom: 0em;
+}
+
+.hero-text {
+  text-align: center;
+  color: rgb(219, 67, 11);
+}
+.hero-text::after {
+  content: "";
+  display: block;
+  background-color: orangered;
+  height: 1.5px;
+  width: 5rem;
+  margin: 0.5em auto 0.5em;
+}
+.search {
+  display: flex;
+  padding: 0.5em;
+  background-color: white;
+  border-radius: 0.5em;
+  width: 35rem;
+  margin: auto;
+  box-shadow: 2px 2px 2px 2px gray;
+  height: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.job {
+  padding: 7px;
+  border: none;
+  border-right: 0.5px solid gray;
+  width: 28%;
+  background: white;
+  height: 0.8rem;
+  margin-right: 0em;
+  font-size: 0.8em;
+  text-align: left;
+}
+.icon{
+  margin-left: 5px;
+}
+.location {
+  padding: 7px;
+  border: none;
+  border-right: 0.5px solid gray;
+  width: 20%;
+  background: white;
+  height: 0.8rem;
+  margin-left: 0em;
+  font-size: 0.8em;
+  text-align: left;
+}
+
+.remote {
+  padding: 7px;
+  border: none;
+  border-right: 0.5px solid gray;
+  width: 25%;
+  background: white;
+  height: 0.8rem;
+  margin-right: 1em;
+  font-size: 0.8em;
+}
+
+.search button {
+  width: 25%;
+  background: orange;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border: none;
+  cursor: pointer;
+  height: 2rem;
+  border-radius: 0.5em;
+  margin-right: 0.4em;
+}
+
+.hero-image::after,
+.hero-image::before{
+  position: absolute; 
+  content: '';
+  width: 100%;
+  height: 50px;
+  background:whitesmoke;
+  bottom: -2em;
+  z-index: 100;
+}
+.hero-image::before{
+  right: 50%;
+  transform: skew(0, 8deg)
+}
+.hero-image::after{
+  left: 50%;
+  transform: skew(0, -8deg)
+}
+@media screen and(min-width:720px) {
+  .hero-image::after,
+.hero-image::before{
+  bottom: -10em;
+  z-index: 100;
+}
+  .hero-image::before{
+    right: 50%;
+    transform: skew(0, 17deg)
+  }
+  .hero-image::after{
+    left: 50%;
+    transform: skew(0, -17deg)
+}
+
+}
+.recruting-companies{
+  background-color: rgb(36, 36, 223);
+  padding: 15em;
+  position: relative;
+  z-index: 10;
+  top: 2em;
+  }

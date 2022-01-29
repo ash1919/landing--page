@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0em;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin: 0em;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+.unstyled-list * {
+  text-decoration: none;
+  list-style: none;
+}
+/* header
+  ============= */
+header {
+  width: 100%;
+  margin-top: 1em;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem auto;
+  overflow: hidden;
+  max-width: 100vw;
+}
+.nav-logo {
+  width: 5.5rem;
+}
+.nav-link {
+  display: flex;
+  min-width: 15rem;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5em;
+}
+.nav-items1 {
+  color: grey;
+  font-size: 0.8rem;
+}
+.nav-items2 {
+  font-size: 0.8rem;
+}
+.signup-button {
+  border-radius: 4rem;
+  background-color: orange;
+  color: white;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  height: 2rem;
+  width: 3rem;
+}
+hr {
+  margin-top: -1em;
+  opacity: 0.2;
+  width: 70%;
+}
+@media (min-width: 530px) {
+  .nav-link {
+    margin-left: 5em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .nav-link {
+    margin-left: 32em;
+  }
+  @media screen and (min-width: 1200px) {
+    .nav-link {
+      margin-left: 39em;
+    }
+  }
+}
+/* Hero
+  ============= */
+.hero-image {
+  background-color: white;
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+}
+.hero-header {
+  color: rgb(14, 14, 128);
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+.hero-text {
+  color: rgb(219, 67, 11);
+  font-weight: 600;
+  display: block;
+}
+.hero-text::after {
+  content: "";
+  display: block;
+  background-color: orangered;
+  height: 1.5px;
+  width: 5rem;
+  margin: 0.5em auto 0.5em;
+  opacity: 0.7;
+}
+.search-tab {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  border-radius: 0.5em;
+  width: 15rem;
+  justify-content: center;
+  position: relative;
+}
+.search-tab * {
+  border-color: thistle;
+  border: none;
+}
+.job,
+.location,
+.remote {
+  border: 1.5px solid thistle;
+}
+
+.icon-1 {
+  position: absolute;
+  right: 1em;
+  top: 0.7em;
+  color: grey;
+}
+.icon-2 {
+  position: absolute;
+  right: 1em;
+  top: 2em;
+  color: grey;
+}
+.icon-3 {
+  position: absolute;
+  right: 0.8em;
+  top: 3.2em;
+  color: grey;
+}
+.search-tab button {
+  background: orange;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.2em;
+}
+@media screen and (min-width: 992px) {
+  .hero-image {
+    height: 45vh;
+  }
+  @media screen and (min-width: 1200px) {
+    .hero-image {
+      height: 45vh;
+    }
+  }
+  .search-tab {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+    background-color: white;
+    border-radius: 0.5em;
+    width: 35rem;
+    margin: auto;
+    box-shadow: 2px 2px 2px 2px gray;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .job {
+    padding: 7px;
+    border: none;
+    border-right: 0.5px solid gray;
+    width: 28%;
+    background: white;
+    height: 0.8rem;
+    margin-right: 0em;
+    font-size: 0.8em;
+    text-align: left;
+  }
+  .location {
+    padding: 7px;
+    border: none;
+    border-right: 0.5px solid gray;
+    width: 20%;
+    background: white;
+    height: 0.8rem;
+    margin-left: 0em;
+    font-size: 0.8em;
+    text-align: left;
+  }
+
+  .remote {
+    padding: 7px;
+    border: none;
+    border-right: 0.5px solid gray;
+    width: 25%;
+    background: white;
+    height: 0.8rem;
+    margin-right: 1em;
+    font-size: 0.8em;
+  }
+
+  .search-tab button {
+    width: 25%;
+    background: orange;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border: none;
+    cursor: pointer;
+    height: 1.8rem;
+    border-radius: 0.2em;
+    margin-right: 0.4em;
+  }
+  .icon-1 {
+    position: relative;
+    left: 0.2em;
+    top: 0.1em;
+  }
+  .icon-2 {
+    position: relative;
+    top: 0.1em;
+    left: 0.3em;
+  }
+  .icon-3 {
+    position: relative;
+    top: 0.1em;
+    left: 0.3em;
+  }
+}
+
+.hero-image::after,
+.hero-image::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50px;
+  background: rgb(63, 63, 236);
+  bottom: -1em;
+  z-index: 100;
+}
+.hero-image::before {
+  right: 50%;
+  transform: skew(0, 5deg);
+}
+.hero-image::after {
+  left: 50%;
+  transform: skew(0, -5deg);
+}
+@media screen and (min-width: 600px) {
+  .hero-image::before {
+    right: 50%;
+    transform: skew(0, 5deg);
+  }
+  .hero-image::after {
+    left: 50%;
+    transform: skew(0, -5deg);
+  }
+  /* .recruiting-companies h2{
+  padding: 1.5em;
+  margin-top: em;
+  } */
+}
+@media screen and (min-width: 1200px) {
+  .hero-image::before {
+    right: 50%;
+    transform: skew(0, 3deg);
+  }
+  .hero-image::after {
+    left: 50%;
+    transform: skew(0, -3deg);
+  }
+}
+/* Recruting company section
+  ============= */
+.recruiting-companies {
+  background-color: rgb(63, 63, 236);
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  z-index: 10;
+  top: -1em;
+}
+
+.recruiting-companies h2 {
+  position: relative;
+  top: 2.5em;
+  color: white;
+  font-weight: 900;
+}
+
+.recruiting-companies-list {
+  width: 90vw;
+  height: auto;
+  padding: 0.5em;
+  margin: auto;
+}
+.item-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em;
+  width: 100%;
+  background-color: whitesmoke;
+  margin-top: 3em;
+  overflow: hidden;
+}
+.item-list img {
+  width: 4em;
+  height: 4em;
+  padding: 0.5em;
+}
+@media screen and (min-width: 600px) {
+  
+  .recruiting-companies-list {
+    width:100%;
+  }
+  .item-list {
+    width: 80%;
+    margin-left: 0em;
+    padding: 0.5em;
+  }
+.item-list img {
+    width: 5em;
+    height: 5em;
+    padding: 1em;
+  }
+  .item-list span {
+    position: absolute;
+    top: 10em;
+  }
+
+  
+@media screen and (min-width: 992px) {
+  .recruiting-companies-list {
+    width: 80%;
+    height: 13vh;
+  }
+}
+/* Explore jobs
+  ============= */
