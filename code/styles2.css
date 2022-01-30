@@ -180,13 +180,14 @@ hr {
     flex-direction: row;
     padding: 0.5em;
     background-color: white;
-    border-radius: 0.5em;
+    border-radius: 0.2em;
     width: 35rem;
     margin: auto;
     box-shadow: 2px 2px 2px 2px gray;
     height: 2rem;
     justify-content: center;
     align-items: center;
+    
   }
   .job {
     padding: 7px;
@@ -232,7 +233,7 @@ hr {
     cursor: pointer;
     height: 1.8rem;
     border-radius: 0.2em;
-    margin-right: 0.4em;
+    /* opacity: 1 !important; */
   }
   .icon-1 {
     position: relative;
