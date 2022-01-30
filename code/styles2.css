@@ -5,7 +5,7 @@
 body {
   margin: 0em;
   font-family: "Raleway", sans-serif;
-  text-align: center;
+  /* text-align: center; */
   margin: 0em;
 }
 img {
@@ -19,6 +19,11 @@ img {
 .unstyled-list * {
   text-decoration: none;
   list-style: none;
+  list-style-type: none;
+}
+a:link {
+  text-decoration: none;
+  color:white;
 }
 /* header
   ============= */
@@ -95,16 +100,19 @@ hr {
   width: 100vw;
   height: 45vh;
   position: relative;
+  text-align: center;
 }
 .hero-header {
   color: rgb(14, 14, 128);
   margin-top: 2rem;
   font-size: 1.4rem;
+  
 }
 .hero-text {
   color: rgb(219, 67, 11);
   font-weight: 600;
   display: block;
+ 
 }
 .hero-text::after {
   content: "";
@@ -270,10 +278,7 @@ hr {
     left: 50%;
     transform: skew(0, -5deg);
   }
-  /* .recruiting-companies h2{
-  padding: 1.5em;
-  margin-top: em;
-  } */
+ 
 }
 @media screen and (min-width: 992px) {
   .hero-image::before {
@@ -295,12 +300,16 @@ hr {
   z-index: 10;
   top: -1em;
 }
+.Job-header{
+  text-align: center;
+}
 
 .recruiting-companies h2 {
   position: relative;
   top: 2.5em;
   color: white;
   font-weight: 900;
+  text-align: center;
 }
 
 .recruiting-companies-list {
@@ -357,15 +366,17 @@ hr {
 
 /* Explore jobs
   ============= */
-
-.Job-header{
+.explore-jobs{
+  text-align: center;
+}
+.Job-header {
   color: rgb(30, 30, 145);
 }
-.card-style{
+.card-style {
   min-width: 8rem;
   max-width: 95%;
   min-height: 8rem;
-  max-height:auto;
+  max-height: auto;
   border-radius: 0.6rem;
   background-color: rgb(255, 250, 250);
   margin-bottom: 1rem;
@@ -376,20 +387,23 @@ hr {
   margin-right: auto;
   overflow: hidden;
 }
-.card-style h4{
+.card-style h4 {
   color: orange;
   font-size: 1.3em;
   margin-bottom: 0em;
 }
-.card-style span{
+.card-style span {
   font-size: 0.8em;
   font-weight: lighter;
 }
-.text-bold{
+.text-bold {
   font-weight: bolder;
   font-size: 0.9em;
 }
-.button button{
+.button{
+  text-align: center;
+}
+.button button {
   min-width: 15vw;
   max-width: 20vw;
   background: orange;
@@ -401,53 +415,133 @@ hr {
   height: 1.8rem;
   border-radius: 2em;
   font-weight: bold;
-
+  /* margin-left: 14em; */
+  
 }
-.footer-text p{
-    color: orange;
-    font-size: 0.8em;
-    font-weight: 500;
+.footer-text p {
+  color: orange;
+  font-size: 0.8em;
+  font-weight: 500;
 }
 
-@media screen and (min-width:720px) {
-  .card-style{
+@media screen and (min-width: 720px) {
+  .card-style {
     width: 70%;
     text-align: justify;
     padding-left: 2em;
   }
 }
-@media screen and (min-width:992px) {
-  .grid-col-span-2{
+@media screen and (min-width: 992px) {
+  .grid-col-span-2 {
     grid-column: span 2;
   }
   .explore-jobs {
-   display: grid;
-   grid-template-columns:repeat(4,1fr) ;
-   gap: 2rem;
-   margin-left: 2em;
-   margin-inline: auto;
-  
- }
- .card-style{
-  width: 95% ;
-  margin: 0em;
- }
-  .card{
-   display: flex;
-   margin: 0em ;
-   justify-content: space-between;
-   align-items: flex-end;
- }
- .footer-text{
-   display:flex;
-   justify-content: flex-end;
-   padding: 0.5em;
-   margin-right: 7.5em;
-   cursor: pointer;
- }
-.button{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-inline: auto;
+  }
+  .card-style {
+    width: 95%;
+    margin: 0em;
+  }
+  .card {
+    display: flex;
+    margin: 0em;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .footer-text {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5em;
+    margin-right: 6.3em;
+    cursor: pointer;
+  }
+  .button {
+    margin-top: 2em;
+    text-align: center;
+  }
+}
+
+/* Footer last
+  ============= */
+.last-footer {
+  background: linear-gradient(
+    96.59deg,
+    #233c7b 47.65%,
+    rgba(0, 9, 75, 0.85) 114.17%
+  );
+  color: white;
+  padding: 3em 0;
+  padding-bottom: 1.5em;
   margin-top: 2em;
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+.grid-span-col-2 {
+  grid-column: span 2;
+}
+.last-footer-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em;
+  row-gap: 1.5em;
+  align-items: start;
+}
+.last-footer-header {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  border-bottom: 1px solid white;
+  margin-left: 1em;
+}
+.last-footer-header img {
+  width: 7rem;
+}
+.social-media *{
+  width: 2rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0px;
+}
+.social-media img {
+  width: 1.5em;
+}
+last-footer-body {
+  display: block;
+  text-align:justify;
+}
+.last-footer-body a{
+  color: orange;
+}
+.header-style{
+  font-weight:800;
+  font-size: 1.2em;
+  border-bottom: 1px solid ;
+  text-align:justify ;
+}
+.ul-style {
+  text-align: justify;
+  padding-left: 0em;
+}
+.footer-end {
+  display: flex;
+  border-top: 1px solid;
+  justify-content: center;
+}
+@media screen and (min-width:992px) {
+  .last-footer-details{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.footer-end {
+  text-align: center;
+  grid-column: span 5;
 }
 }
-
-
